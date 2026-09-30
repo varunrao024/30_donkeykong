@@ -41,7 +41,9 @@ def on_barrel_jumped(player, barrel):
 
 def score_multiplier(score):
     """Return a multiplier applied to points earned from clearing a barrel, or None for the default 1x."""
-    pass
+    if score >= 300:
+        return 2
+    return None
 
 
 class Player:
